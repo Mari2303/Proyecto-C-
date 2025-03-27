@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-namespace Entity.Model
+using Entity.Enum;
+
+
+namespace Entity.ModelExperience
 {
-    class User
+    class RolPermission
     {
         public int Id { get; set; }
-        public string name { get; set; }
-
-        public string email { get; set; }
-        public string Password { get; set; }
-       
+        public int RolId { get; set; }
+        public Rol Rol { get; set; }
+        public int PermissionId { get; set; }
+        public Permission  Permission  { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime DeleteAt { get; set; }
     }

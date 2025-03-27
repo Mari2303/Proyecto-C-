@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entity.Model
 {
-    class Person
+    class Document
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string email { get; set; }
-        public string phone { get; set; }
-        public string Active { get; set; }
-       
+        public string url { get; set; }
+        public string name { get; set; }        
         public DateTime DeleteAt { get; set; }
         public DateTime CreateAt { get; set; }
 

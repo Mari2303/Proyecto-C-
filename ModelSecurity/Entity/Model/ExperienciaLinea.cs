@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entity.Model
 {
-    class Person
+    class ExperienciaLinea
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string email { get; set; }
-        public string phone { get; set; }
-        public string Active { get; set; }
        
+        public int  lineThematicId { get; set; }
+        public LineThematic LineThematic { get; set; }
+
+        public  int ExperienceId { get; set; }
+        public Experience Experience { get; set; }
         public DateTime DeleteAt { get; set; }
         public DateTime CreateAt { get; set; }
 
